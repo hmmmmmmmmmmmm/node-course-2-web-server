@@ -47,6 +47,12 @@ app.get('/about',(req,res) => {
     });
 });
 
+app.get('/projects',(req,res) => {
+    res.render('projects.hbs',{
+        pageTitle: 'Ptojects Page'
+    });
+});
+
 app.get('/contact',(req,res)=>{
     res.send('<h1>Contact Us</h1>' +
             '<textarea></textarea>');
